@@ -6,24 +6,43 @@
   --primary-font: Arial, sans-serif;
   --header-background: #211f20;
 }
-header {
+body {
+  font-family: var(--primary-font);
   background-color: var(--header-background);
   color: var(--color-primary);
+}
+header {
   padding: 20px 0;
 }
 .container {
-  max-width: 1000px;
-  padding: 20px;
+  width: 1200px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
 }
 nav ul {
   padding: 0;
   margin: 0;
   display: flex;
   list-style: none;
+  align-items: center;
 }
 nav li {
-  margin-left: 20px;
+  margin-left: 35px;
+}
+nav a {
+  color: var(--color-light);
+  font-size: 15px;
+  font-family: var(--primary-font);
+}
+.button {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 50px;
+}
+
+@media (max-width: 800px) {
 }
