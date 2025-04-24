@@ -9,7 +9,8 @@
 body {
   font-family: var(--primary-font);
   background-color: var(--header-background);
-  color: var(--color-primary);
+  color: var(--color-light);
+  margin: 0;
 }
 header {
   padding: 20px 0;
@@ -20,27 +21,75 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
+}
+.logotip {
+  display: flex;
+  flex-direction: column;
+}
+
+.logotip h2 {
+  font-family: var(--primary-font-base);
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
   margin: 0;
 }
+.logotip p {
+  font-family: var(--primary-font);
+  font-size: 13px;
+  color: var(--color-light);
+  line-height: 10px;
+  letter-spacing: 0.2em;
+  margin: 10px 0 0;
+}
 nav ul {
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  list-style: none;
-  align-items: center;
 }
 nav li {
   margin-left: 35px;
 }
 nav a {
-  color: var(--color-light);
+  text-decoration: none;
+  color: var(--color-gray);
   font-size: 15px;
   font-family: var(--primary-font);
 }
+
+nav ul li:first-child a {
+  color: #fafafa;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+}
+
+.hero {
+  padding: 10px;
+}
+.hero h1 {
+  font-family: var(--primary-font-base);
+  color: var(--color-light);
+  margin-bottom: 42px;
+  font-size: 44px;
+  line-height: 100%;
+}
+
+.hero p {
+  font-size: 15px;
+  color: var(--color-light);
+  margin-bottom: 42px;
+}
 .button {
+  display: inline-block;
   background-color: var(--color-primary);
-  color: #ffffff;
-  padding: 20px 40px;
+  color: #292929;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 17px;
+  font-family: var(--primary-font-base);
   border-radius: 50px;
 }
 
