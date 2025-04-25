@@ -18,10 +18,10 @@ header {
 .container {
   width: 1200px;
   height: 60px;
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 40px;
 }
 .logotip {
   display: flex;
@@ -48,15 +48,12 @@ header {
 }
 
 nav {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  margin-left: auto;
 }
 nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 40px;
+  margin: 0;
   display: flex;
 }
 nav li {
@@ -76,7 +73,10 @@ nav ul li:first-child a {
 }
 
 .hero {
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 130px;
 }
 .hero h1 {
   font-family: var(--primary-font-base);
@@ -88,9 +88,10 @@ nav ul li:first-child a {
 
 .hero p {
   font-size: 15px;
-  color: var(--color-light);
+  color: var(--color-gray);
   margin-bottom: 42px;
 }
+
 .button {
   display: inline-block;
   background-color: var(--color-primary);
