@@ -9,7 +9,6 @@
 body {
   font-family: var(--primary-font);
   margin: 0;
-  padding: 0;
   background-color: var(--header-background);
   color: var(--color-light);
   background: linear-gradient(
@@ -21,23 +20,23 @@ body {
 }
 
 header {
-  padding: 30px 40px;
+  padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
 }
-.container {
-  width: 1200px;
-  height: 60px;
+.header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 30px 20px 0;
+  box-sizing: border-box;
 }
 .logotip {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .logotip h2 {
@@ -46,7 +45,7 @@ header {
   font-weight: 400;
   color: var(--color-primary);
   letter-spacing: 0.1em;
-  margin: 0;
+  margin-bottom: 10px;
 }
 .logotip p {
   font-family: var(--primary-font);
@@ -54,33 +53,39 @@ header {
   color: var(--color-light);
   line-height: 10px;
   letter-spacing: 0.2em;
-  margin: 10px 0 0;
+  margin: 0;
 }
 
-nav {
+nav,
+.header__nav {
   margin-left: auto;
 }
-nav ul {
+nav ul,
+.nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-nav li {
+nav li,
+.nav__item {
   margin-left: 35px;
 }
-nav a {
+nav a,
+.nav__link {
   text-decoration: none;
   color: var(--color-gray);
   font-size: 15px;
   font-family: var(--primary-font);
   transition: color 0.3s;
 }
-nav a:hover {
+nav a:hover,
+.nav__link:hover {
   color: var(--color-light);
 }
 
-nav ul li:first-child a {
+nav ul li:first-child a,
+.nav__list .nav__item:first-child .nav__link {
   color: #fafafa;
   text-decoration: underline;
   text-decoration-color: var(--color-primary);
@@ -92,22 +97,30 @@ nav ul li:first-child a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 100px 40px 0;
+  padding: 100px 15px 0;
 }
 
 .hero h1 {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: var(--primary-font-base);
   color: var(--color-light);
   margin-bottom: 42px;
   font-size: 44px;
   line-height: 60px;
+  font-weight: 500;
 }
 
-.hero p {
+.hero p,
+.hero__text {
   font-size: 15px;
   color: var(--color-gray);
   margin-bottom: 42px;
+  line-height: 1.6;
+}
+.hero p::before {
+  content: "We offer to give a chance to a little and nice puppy with an extremely\A wide and open heart. He or she will love you more than anybody else\A in the world, you will see!";
+  white-space: pre;
+  display: block;
 }
 
 .button {
@@ -126,5 +139,8 @@ nav ul li:first-child a {
   background-color: var(--color-light);
   border-color: var(--color-primary);
 }
-@media (max-width: 1600px) {
+
+.hero__image {
+  position: relative;
+  left: -60px;
 }
