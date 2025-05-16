@@ -19,19 +19,15 @@ body {
   );
 }
 
-header {
-  padding: 60px 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
 .header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 30px 20px 0;
   box-sizing: border-box;
+  width: 100%;
+  padding: 60px 20px;
 }
 .logotip {
   display: flex;
@@ -39,53 +35,50 @@ header {
   margin-left: 10px;
 }
 
-.logotip h2 {
+.logotip-title {
   font-family: var(--primary-font-base);
   font-size: 32px;
   font-weight: 400;
   color: var(--color-primary);
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6px;
   margin-bottom: 10px;
 }
-.logotip p {
+.logotip-description {
   font-family: var(--primary-font);
   font-size: 13px;
   color: var(--color-light);
   line-height: 10px;
-  letter-spacing: 0.2em;
+  letter-spacing: 2.6px;
   margin: 0;
 }
 
-nav,
 .header__nav {
   margin-left: auto;
 }
-nav ul,
-.nav__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+.header__nav .nav__list {
   display: flex;
+  gap: 35px;
+  list-style: none;
 }
-nav li,
-.nav__item {
-  margin-left: 35px;
+
+.header__nav .nav__item {
+  margin-left: 0;
 }
-nav a,
-.nav__link {
+
+.header__nav .nav__link {
   text-decoration: none;
   color: var(--color-gray);
   font-size: 15px;
   font-family: var(--primary-font);
   transition: color 0.3s;
 }
-nav a:hover,
-.nav__link:hover {
+
+.header__nav .nav__link:hover {
   color: var(--color-light);
 }
 
-nav ul li:first-child a,
-.nav__list .nav__item:first-child .nav__link {
+.header__nav .nav__list .nav__item:first-child .nav__link {
   color: #fafafa;
   text-decoration: underline;
   text-decoration-color: var(--color-primary);
@@ -97,7 +90,7 @@ nav ul li:first-child a,
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 100px 15px 0;
+  padding: 100px 25px 0;
 }
 
 .hero h1 {
@@ -123,6 +116,14 @@ nav ul li:first-child a,
   display: block;
 }
 
+.hero__title {
+  display: flex;
+  flex-direction: column;
+}
+.hero__title-line {
+  display: block;
+}
+
 .button {
   display: inline-block;
   background-color: var(--color-primary);
@@ -143,4 +144,5 @@ nav ul li:first-child a,
 .hero__image {
   position: relative;
   left: -60px;
+  /* тогда собака немного в другую сторону двигается, если убрать */
 }
