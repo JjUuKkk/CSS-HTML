@@ -194,3 +194,65 @@ body {
     padding: 40px 20px;
   }
 }
+.friends {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+  text-align: center;
+}
+.friends__title {
+  color: #545454;
+  font-family: var(--primary-font-base);
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.friends__gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+.pet-card {
+  background: #fafafa;
+  border-radius: 9px;
+  padding-bottom: 30px;
+  width: 270px;
+  transition: all 0.3s;
+}
+
+.pet-card__image {
+  border-radius: 9px 9px 0 0;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.pet-card__name {
+  font-family: var(--primary-font-base);
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-bottom: 30px;
+}
+.pet-card__button {
+  display: inline-block;
+  padding: 15px 45px;
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  font-family: var(--primary-font-base);
+  font-size: 17px;
+  color: #292929;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.friends__button {
+  margin-top: 20px;
+}
