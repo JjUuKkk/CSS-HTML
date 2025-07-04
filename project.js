@@ -157,3 +157,6 @@
 // const names = users.map(user => user.name);
 // const usID = users.find(user => user.id === 3);
 // const nav = users.some(user => user.skills.includes("JavaScript"));
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.slice(2, 4);
+// console.log(newArr);
