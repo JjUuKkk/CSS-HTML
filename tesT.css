@@ -116,11 +116,14 @@ body {
   margin-bottom: 42px;
   line-height: 1.6;
 }
-.hero p::before {
+.hero__text-line {
+  display: block;
+}
+/* .hero p::before {
   content: "We offer to give a chance to a little and nice puppy with an extremely\A wide and open heart. He or she will love you more than anybody else\A in the world, you will see!";
   white-space: pre;
   display: block;
-}
+} */
 
 .hero__title {
   display: flex;
@@ -240,7 +243,7 @@ body {
 .pet-card__name {
   font-family: var(--primary-font-base);
   font-size: 20px;
-  letter-spacing: 0.06em;
+  letter-spacing: 1px;
   color: #545454;
   margin-bottom: 30px;
 }
@@ -464,4 +467,68 @@ body {
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 0;
+  }
+
+  .hero__image {
+    position: static;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .donation__container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .donation__column--dog {
+    order: -1;
+  }
+
+  .donation__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .donation__card {
+    justify-content: center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    padding-bottom: 200px;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__contact-block {
+    text-align: center;
+  }
+
+  .footer__contact {
+    justify-content: center;
+  }
+
+  .footer__dog {
+    right: 50%;
+    transform: translateX(50%);
+    width: 250px;
+  }
 }
